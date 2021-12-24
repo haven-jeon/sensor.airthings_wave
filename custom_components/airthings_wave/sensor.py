@@ -222,7 +222,7 @@ class AirthingsSensor(SensorEntity):
         """Initialize a sensor."""
         self.device = device
         self._mac = mac
-        self._name = '{}-{}'.format(mac.upper(), name)
+        self._name = '{}-{}'.format('AirThings', name)
         _LOGGER.debug("Added sensor entity {}".format(self._name))
         self._sensor_name = name
 
